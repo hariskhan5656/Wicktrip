@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wicktrip</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="favicon_io/site.webmanifest">
+	<style>
+		body {
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		#mycanvas {
+			position: absolute;
+			width: 100vw;
+			height: 102vh;
+			z-index: -999;
+		}
+		div{
+			width: 100vw;
+    		height: 100vh;
+    		background-image: url('assets/overlay.png');
+    		background-size: cover;
+    		background-position: center;
+    		position: fixed;
+    		pointer-events: none;
+    		z-index: 5;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div></div>
+
+	<canvas id="mycanvas">
+		<img src="assets/bg layers/bg-layer1.png" alt="" id="layer1">
+		<img src="assets/bg layers/bg-layer2.png" alt="" id="layer2">
+		<img src="assets/bg layers/bg-layer3.png" alt="" id="layer3">
+		<img src="assets/bg layers/bg-layer4.png" alt="" id="layer4">
+	</canvas>
+
+	<script src="https://unpkg.com/kaboom@3000/dist/kaboom.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/level1.js"></script>
+	<script type="text/javascript" src="js/level2.js"></script>
+	<script type="text/javascript" src="js/end.js"></script>
+	<script type="text/javascript" src="js/particles.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
